@@ -1,83 +1,29 @@
 
-
-# 1
-
-N = 5
-for i in range(1, N + 1):
-    res = "";
-    for j in range(1, i+1):
-        res += "*" + " "
-    
-    print(res)
-    
+mat = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
 
 
+row = len(mat)
+col = len(mat[0])
 
-print()
-
-
-# 2
-
-N = 5
-for i in range(1, N + 1):
-    res = ""
-    for j in range(1, N + 1):
-        if (i == 1 or i == N or j == N):
-            res += "*" + " "
-        else:
-            res += "  "
-        
-    
-    print(res)
-    
+# x = 1
+# for i   in range(0, row):
+#     print(mat[x-1][i])
+#     print(mat[i][x-1])
 
 
+# for i in range(0, row):
+#     for j in range(0, col):
+#         if i == j:
+#             print(mat[i][j])
 
 
-print()
+for i in range(0, row):
+    for j in range(0, col):
+        if (i == row - j - 1):
+            print(mat[i][j])
 
-
-# 3
-
-N = 5
-for i in range(1, N + 1):
-    res = "";
-    for j in range(1, N + 1):
-        if (i == N or j == N):
-            res += "* "
-        else:
-            res += "  "
-        
-    
-    print(res)
-   
-
-
-
-# 4
-
-N = 5
-
-for i in range(1, N + 1):
-    result = "";
-    for j in range(1, N + 1 - i):
-        result += " "
-    for k in range(1, i + 1):
-        result += "*" + " "
-    print(result)
-
-
-# print()
-
-
-# 5
-
-N = 5
-
-for i in range(1, N + 1):
-    result = "";
-    for j in range(1, N + 1 - i):
-        result += " "
-    for k in range(1, i + 1):
-        result += "*" + " "
-    print(result)
+            
